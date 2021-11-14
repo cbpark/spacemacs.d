@@ -549,7 +549,8 @@ before packages are loaded."
 
   (require 'init-face)
   (require 'init-editor)
-  (require 'init-mu4e))
+  (require 'init-mu4e)
+  (require 'init-maxima))
 
 
 ;; Do not write anything past this comment. This is where Emacs will
