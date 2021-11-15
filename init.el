@@ -47,6 +47,7 @@ This function should only modify configuration layer settings."
             c-c++-enable-clang-support t)
      emacs-lisp
      git
+     haskell
      helm
      (latex :variables latex-enable-auto-fill t)
      (lsp :variables
