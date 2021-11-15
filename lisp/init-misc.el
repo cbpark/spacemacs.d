@@ -17,5 +17,7 @@
 (with-eval-after-load 'markdown-mode
   (add-hook 'markdown-mode-hook 'turn-off-auto-fill))
 
+(global-hl-line-mode -1)
+
 (provide 'init-misc)
 ;;; init-misc.el ends here
