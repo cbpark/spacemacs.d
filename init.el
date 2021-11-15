@@ -40,7 +40,11 @@ This function should only modify configuration layer settings."
      ;; ----------------------------------------------------------------
      auto-completion
      ;; better-defaults
-     (c-c++ :variables c-c++-backend 'lsp-ccls)
+     (c-c++ :variables
+            c-c++-adopt-subprojects t
+            c-c++-backend 'lsp-ccls
+            c-c++-lsp-enable-semantic-highlight 'rainbow
+            c-c++-enable-clang-support t)
      emacs-lisp
      git
      helm
