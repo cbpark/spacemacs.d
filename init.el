@@ -45,7 +45,9 @@ This function should only modify configuration layer settings."
      git
      helm
      (latex :variables latex-enable-auto-fill t)
-     (lsp :variables lsp-ui-doc-enable nil)
+     (lsp :variables
+          lsp-lens-enable nil
+          lsp-ui-doc-enable nil)
      markdown
      (mu4e :variables
            mu4e-installation-path "/usr/share/emacs/site-lisp/mu4e")
@@ -559,6 +561,7 @@ before packages are loaded."
   (require 'init-editor)
 
   (require 'init-auctex)
+  (require 'init-cc-mode)
   (require 'init-mu4e)
   (require 'init-maxima)
 
