@@ -2,6 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
+(set-face-attribute 'region nil :background "#666" :foreground "#ffffff")
+
 ;; (set-frame-parameter (selected-frame) 'alpha '(96 96))
 ;; (add-to-list 'default-frame-alist '(alpha 96 96))
 
