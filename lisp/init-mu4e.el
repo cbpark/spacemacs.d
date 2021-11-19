@@ -102,14 +102,16 @@
              '("ViewInBrowser" . mu4e-action-view-in-browser) t)
 
 ;; apply format=flowed
-(setq mu4e-compose-format-flowed t)
-(add-hook 'mu4e-compose-mode-hook (lambda () (use-hard-newlines -1)))
+;; (setq mu4e-compose-format-flowed t)
+;; (add-hook 'mu4e-compose-mode-hook (lambda () (use-hard-newlines -1)))
 
 ;; speeding up indexing
 ;; (setq mu4e-index-cleanup    nil ;; don't do a full cleanup check
 ;;       mu4e-index-lazy-check t)  ;; don't consider up-to-date dirs
 
 (setq mu4e-view-show-addresses t)
+
+(add-hook 'mail-mode-hook (lambda () (setq fill-column 72)))
 
 (provide 'init-mu4e)
 ;;; init-mu4e.el ends here
