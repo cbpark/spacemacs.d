@@ -67,7 +67,10 @@ This function should only modify configuration layer settings."
             shell-default-term-shell "/bin/zsh"
             shell-default-full-span nil
             close-window-with-terminal t)
-     (python :variables python-backend 'lsp)
+     (python :variables
+             python-backend 'lsp
+             python-formatter 'yapf
+             python-sort-imports-on-save t)
      (rust :variables rust-backend 'lsp)
      spell-checking
      syntax-checking
