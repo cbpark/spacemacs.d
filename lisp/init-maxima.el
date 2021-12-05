@@ -14,6 +14,7 @@
   (define-key maxima-mode-map (kbd "C-c C-l") 'maxima-load-file)
   (define-key maxima-mode-map (kbd "C-c C-k") 'maxima-stop))
 
+(add-hook 'maxima-mode-hook #'display-line-numbers-mode)
 (add-hook 'inferior-maxima-mode-hook (lambda () (undo-tree-mode -1)))
 
 ;; Imaxima
