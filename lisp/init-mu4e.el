@@ -98,9 +98,6 @@
 (setq message-citation-line-format   "On %a, %d %b %Y at %R %Z, %f wrote:\n"
       message-citation-line-function 'message-insert-formatted-citation-line)
 
-(add-to-list 'mu4e-view-actions
-             '("ViewInBrowser" . mu4e-action-view-in-browser) t)
-
 ;; apply format=flowed
 ;; (setq mu4e-compose-format-flowed t)
 ;; (add-hook 'mu4e-compose-mode-hook (lambda () (use-hard-newlines -1)))
