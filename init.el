@@ -73,6 +73,7 @@ This function should only modify configuration layer settings."
              python-formatter 'yapf
              python-sort-imports-on-save t)
      (rust :variables rust-backend 'lsp)
+     shell-scripts
      spell-checking
      syntax-checking
      ;; version-control
