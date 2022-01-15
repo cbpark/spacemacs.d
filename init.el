@@ -581,6 +581,7 @@ before packages are loaded."
   (require 'init-cc-mode)
   (require 'init-mu4e)
   (require 'init-maxima)
+  (require 'init-org)
 
   (require 'init-misc))
 
