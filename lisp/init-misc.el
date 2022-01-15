@@ -15,7 +15,8 @@
 
 ;; markdown mode
 (with-eval-after-load 'markdown-mode
-  (add-hook 'markdown-mode-hook 'turn-off-auto-fill))
+  (add-hook 'markdown-mode-hook 'turn-off-auto-fill)
+  (add-hook 'markdown-mode-hook 'visual-line-mode))
 
 ;; syntax highlighting for sysmtemd files
 (add-to-list 'auto-mode-alist '("\\.service\\'"   . conf-unix-mode))
