@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
      (c-c++ :variables
             c-c++-adopt-subprojects t
             c-c++-backend 'lsp-ccls
-            c-c++-lsp-enable-semantic-highlight 'rainbow
+            ;; c-c++-lsp-enable-semantic-highlight 'rainbow
             c-c++-enable-clang-support t)
      emacs-lisp
      git
@@ -246,7 +246,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(doom-nord
+                         zenburn
                          spacemacs-dark
                          spacemacs-light)
 
