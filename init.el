@@ -45,6 +45,7 @@ This function should only modify configuration layer settings."
             c-c++-backend 'lsp-ccls
             ;; c-c++-lsp-enable-semantic-highlight 'rainbow
             c-c++-enable-clang-support t)
+     (cmake :variables cmake-backend 'company-cmake)
      emacs-lisp
      git
      haskell
