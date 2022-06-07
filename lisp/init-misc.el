@@ -46,5 +46,8 @@
 
 (global-hl-line-mode -1)
 
+;; undo-tree
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
+
 (provide 'init-misc)
 ;;; init-misc.el ends here
