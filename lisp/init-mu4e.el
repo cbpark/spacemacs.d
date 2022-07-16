@@ -5,8 +5,8 @@
 (require 'mu4e)
 
 (setq mu4e-attachment-dir  "~/Downloads"
-      mu4e-sent-folder "/cbpark_gmail.com/[Google Mail].Sent Mail"
-      mu4e-trash-folder "/cbpark_gmail.com/[Google Mail].Trash")
+      mu4e-sent-folder "/gmail/[Google Mail]/Sent Mail"
+      mu4e-trash-folder "/gmail/[Google Mail]/Trash")
 
 ;; don't save message to Sent Messages, Gmail/IMAP takes care of this.
 (setq mu4e-sent-messages-behavior
@@ -16,14 +16,15 @@
           'sent)))
 
 (setq mu4e-maildir-shortcuts
-      '(("/cbpark_gmail.com/INBOX"                   . ?i)
-        ("/cbpark_gmail.com/[Google Mail].Sent Mail" . ?s)
-        ("/cbpark_gmail.com/[Google Mail].Trash"     . ?t)
-        ("/cbpark_gmail.com/arXiv-hep"               . ?a)
-        ("/cbpark_gmail.com/GitHub"                  . ?g)))
+      '(("/gmail/INBOX"                   . ?i)
+        ("/gmail/[Google Mail]/Sent Mail" . ?s)
+        ("/gmail/[Google Mail]/Trash"     . ?t)
+        ("/gmail/arXiv-hep"               . ?a)
+        ("/gmail/GitHub"                  . ?g)))
 
 ;; allow for updating mail using 'U' in the main view:
-(setq mu4e-get-mail-command "offlineimap -o")
+;; (setq mu4e-get-mail-command "offlineimap -o")
+(setq mu4e-get-mail-command "mbsync -a")
 
 ;; update every 20 minuites
 ;; (setq mu4e-update-interval 1200)
