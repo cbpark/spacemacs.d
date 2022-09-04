@@ -63,8 +63,6 @@
         (setq user-mail-address
               (cond ((mu4e-message-contact-field-matches
                       msg :to "cbpark@kias.re.kr") "cbpark@kias.re.kr")
-                    ((mu4e-message-contact-field-matches
-                      msg :to "cbpark@ibs.re.kr") "cbpark@ibs.re.kr")
                     (t "cbpark@gmail.com"))))))
 (add-hook 'mu4e-compose-pre-hook 'my-set-from-address)
 
@@ -82,9 +80,7 @@
                (account (cond ((string-match "cbpark@gmail.com" from)
                                "cbpark@gmail.com")
                               ((string-match "cbpark@kias.re.kr" from)
-                               "cbpark@kias.re.kr")
-                              ((string-match "cbpark@ibs.re.kr" from)
-                               "cbpark@ibs.re.kr"))))
+                               "cbpark@kias.re.kr"))))
           (setq message-sendmail-extra-arguments (list '"-a" account))))))
 (setq message-sendmail-envelope-from 'header)
 (add-hook 'message-send-mail-hook 'choose-msmtp-account)
