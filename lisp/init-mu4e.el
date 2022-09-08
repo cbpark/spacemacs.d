@@ -6,7 +6,9 @@
 
 (setq mu4e-attachment-dir  "~/Downloads"
       mu4e-sent-folder "/gmail/[Google Mail]/Sent Mail"
-      mu4e-trash-folder "/gmail/[Google Mail]/Trash")
+      mu4e-drafts-folder "/gmail/[Google Mail]/Drafts"
+      mu4e-trash-folder "/gmail/[Google Mail]/Trash"
+      user-mail-address "cbpark@gmail.com")
 
 ;; don't save message to Sent Messages, Gmail/IMAP takes care of this.
 (setq mu4e-sent-messages-behavior
@@ -16,11 +18,48 @@
           'sent)))
 
 (setq mu4e-maildir-shortcuts
-      '(("/gmail/INBOX"                   . ?i)
+      '(("/gmail/INBOX"                   . ?g)
         ("/gmail/[Google Mail]/Sent Mail" . ?s)
         ("/gmail/[Google Mail]/Trash"     . ?t)
         ("/gmail/arXiv-hep"               . ?a)
-        ("/gmail/GitHub"                  . ?g)))
+        ("/jnu/Inbox"                     . ?j)
+        ("/jnu/Sent"                      . ?e)
+        ("/jnu/Trash"                     . ?r)))
+
+(defvar my-mu4e-account-alist
+  '(("gmail"
+     (mu4e-sent-folder "/gmail/[Google Mail]/Sent Mail")
+     (mu4e-drafts-folder "/gmail/[Google Mail]/Drafts")
+     (mu4e-trash-folder "/gmail/[Google Mail]/Trash")
+     (user-mail-address "cbpark@gmail.com"))
+    ("jnu"
+     (mu4e-sent-folder "/jnu/Sent")
+     (mu4e-drafts-folder "/jnu/Drafts")
+     (mu4e-trash-folder "/jnu/Trash")
+     (user-mail-address "cbpark@jnu.ac.kr"))))
+
+(defun my-mu4e-set-account ()
+  "Set the account for composing a message."
+  (let* ((account
+          (if mu4e-compose-parent-message
+              (let ((maildir (mu4e-message-field mu4e-compose-parent-message
+                                                 :maildir)))
+                (string-match "/\\(.*?\\)/" maildir)
+                (match-string 1 maildir))
+            (completing-read (format "Compose with account: (%s) "
+                                     (mapconcat (lambda (var) (car var))
+                                                my-mu4e-account-alist "/"))
+                             (mapcar (lambda (var) (car var))
+                                     my-mu4e-account-alist)
+                             nil t nil nil (caar my-mu4e-account-alist))))
+         (account-vars (cdr (assoc account my-mu4e-account-alist))))
+    (if account-vars
+        (mapc (lambda (var)
+                  (set (car var) (cadr var)))
+              account-vars)
+      (error "No email account found"))))
+
+(add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
 
 ;; allow for updating mail using 'U' in the main view:
 ;; (setq mu4e-get-mail-command "offlineimap -o")
@@ -62,7 +101,7 @@
     (if msg
         (setq user-mail-address
               (cond ((mu4e-message-contact-field-matches
-                      msg :to "cbpark@kias.re.kr") "cbpark@kias.re.kr")
+                      msg :to "cbpark@jnu.ac.kr") "cbpark@jnu.ac.kr")
                     (t "cbpark@gmail.com"))))))
 (add-hook 'mu4e-compose-pre-hook 'my-set-from-address)
 
@@ -79,8 +118,8 @@
                        (message-fetch-field "from")))
                (account (cond ((string-match "cbpark@gmail.com" from)
                                "cbpark@gmail.com")
-                              ((string-match "cbpark@kias.re.kr" from)
-                               "cbpark@kias.re.kr"))))
+                              ((string-match "cbpark@jnu.ac.kr" from)
+                               "cbpark@jnu.ac.kr"))))
           (setq message-sendmail-extra-arguments (list '"-a" account))))))
 (setq message-sendmail-envelope-from 'header)
 (add-hook 'message-send-mail-hook 'choose-msmtp-account)
