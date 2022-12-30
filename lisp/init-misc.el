@@ -37,14 +37,14 @@
 
 ;; line-numbers
 (setq-default display-line-numbers-type 'visual
-              display-line-numbers-width 4
+              ;; display-line-numbers-width 4
               display-line-numbers-widen t)
 
-(add-hook 'prog-mode-hook #'display-line-numbers-mode)
-(dolist (hook '(text-mode-hook lisp-interaction-mode-hook))
-  (add-hook hook (lambda () (display-line-numbers-mode -1))))
+;; (add-hook 'prog-mode-hook #'display-line-numbers-mode)
+;; (dolist (hook '(text-mode-hook lisp-interaction-mode-hook))
+;;   (add-hook hook (lambda () (display-line-numbers-mode -1))))
 
-(global-hl-line-mode -1)
+;; (global-hl-line-mode -1)
 
 ;; undo-tree
 (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
