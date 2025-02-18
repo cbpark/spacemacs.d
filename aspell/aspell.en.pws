@@ -1,4 +1,4 @@
-personal_ws-1.1 en 279 
+personal_ws-1.1 en 284 
 AMS
 Abelian
 BCFW
@@ -44,6 +44,7 @@ Higgs
 Higgses
 Higgsstrahlung
 ILC
+Inrt
 Jacobian
 KKLT
 KKT
@@ -139,6 +140,7 @@ dimensionful
 dimuon
 diphoton
 ditau
+dof
 eEDM
 eigenbasis
 eigenoperators
@@ -158,6 +160,7 @@ gluino
 gluinos
 gluon
 gluons
+gof
 gravitino
 hadron
 hadronic
@@ -201,6 +204,7 @@ neutralinos
 nonlinearly
 nonperturbative
 nonvanishing
+normalizations
 notational
 observables
 optimality
@@ -228,6 +232,7 @@ renormalizable
 renormalization
 renormalizations
 renormalized
+rephasing
 rescale
 rescaled
 rescaling
