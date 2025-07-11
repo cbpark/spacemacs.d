@@ -58,17 +58,17 @@ This function should only modify configuration layer settings."
           lsp-lens-enable nil
           lsp-ui-doc-enable nil)
      markdown
-     (mu4e :variables
-           mu4e-installation-path "/usr/share/emacs/site-lisp/mu4e")
-     multiple-cursors
+     ;; (mu4e :variables
+     ;;       mu4e-installation-path "/usr/share/emacs/site-lisp/mu4e")
+     ;; multiple-cursors
      ;; org
-     (shell :variables
-            shell-default-shell 'vterm
-            shell-default-height 30
-            shell-default-position 'bottom
-            shell-default-term-shell "/bin/zsh"
-            shell-default-full-span nil
-            close-window-with-terminal t)
+     ;; (shell :variables
+     ;;        shell-default-shell 'vterm
+     ;;        shell-default-height 30
+     ;;        shell-default-position 'bottom
+     ;;        shell-default-term-shell "/bin/zsh"
+     ;;        shell-default-full-span nil
+     ;;        close-window-with-terminal t)
      (python :variables
              python-backend 'lsp
              python-formatter 'yapf
@@ -78,7 +78,7 @@ This function should only modify configuration layer settings."
      spell-checking
      syntax-checking
      ;; version-control
-     treemacs
+     ;; treemacs
      yaml)
 
    ;; List of additional packages that will be installed without being wrapped
