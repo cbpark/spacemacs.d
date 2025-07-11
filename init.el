@@ -609,7 +609,7 @@ before packages are loaded."
 
   (require 'init-auctex)
   (require 'init-cc-mode)
-  (require 'init-mu4e)
+  ;; (require 'init-mu4e)
   (require 'init-maxima)
   (require 'init-org)
 
