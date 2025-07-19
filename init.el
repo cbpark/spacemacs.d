@@ -588,14 +588,6 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq zenburn-override-colors-alist '(("zenburn-bg"    . "#232629")
                                         ("zenburn-bg-05" . "#232629"))))
 
-
-(defun dotspacemacs/user-load ()
-  "Library to load while dumping.
-This function is called only while dumping Spacemacs configuration. You can
-`require' or `load' the libraries of your choice that will be included in the
-dump."
-  )
-
 (defun dotspacemacs/user-config ()
   "Configuration for user code:
 This function is called at the very end of Spacemacs startup, after layer
