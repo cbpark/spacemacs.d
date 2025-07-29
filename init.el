@@ -49,9 +49,9 @@ This function should only modify configuration layer settings."
      emacs-lisp
      git
      haskell
-     ;; helm
+     helm
      html
-     ivy
+     ;; ivy
      (latex :variables
             latex-build-command "LaTeX"
             latex-enable-auto-fill t)
@@ -59,8 +59,8 @@ This function should only modify configuration layer settings."
           lsp-lens-enable nil
           lsp-ui-doc-enable nil)
      markdown
-     ;; (mu4e :variables
-     ;;       mu4e-installation-path "/usr/share/emacs/site-lisp/mu4e")
+     (mu4e :variables
+           mu4e-installation-path "/usr/share/emacs/site-lisp/mu4e")
      ;; multiple-cursors
      ;; org
      ;; (shell :variables
@@ -601,7 +601,7 @@ before packages are loaded."
 
   (require 'init-auctex)
   (require 'init-cc-mode)
-  ;; (require 'init-mu4e)
+  (require 'init-mu4e)
   (require 'init-maxima)
   ;; (require 'init-org)
 

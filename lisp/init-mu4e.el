@@ -54,7 +54,6 @@
 (add-hook 'mu4e-compose-pre-hook 'my-mu4e-set-account)
 
 ;; allow for updating mail using 'U' in the main view:
-;; (setq mu4e-get-mail-command "offlineimap -o")
 (setq mu4e-get-mail-command "mbsync -a")
 
 ;; update every 20 minuites
