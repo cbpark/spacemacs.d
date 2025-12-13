@@ -48,7 +48,7 @@ This function should only modify configuration layer settings."
      (cmake :variables cmake-backend 'company-cmake)
      emacs-lisp
      git
-     haskell
+     (haskell :variables haskell-enable-hindent t)
      helm
      html
      ;; ivy
