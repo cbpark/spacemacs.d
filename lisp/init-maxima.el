@@ -24,7 +24,6 @@
 (autoload 'imaxima "imaxima" "Frontend for maxima with Image support" t)
 (autoload 'imath-mode "imath" "Imath mode for math formula input" t)
 (with-eval-after-load 'imaxima
-  (setq imaxima-maxima-program "maxima")
   (setq imaxima-use-maxima-mode-flag t)
   (setq imaxima-fnt-size "LARGE"))
 
