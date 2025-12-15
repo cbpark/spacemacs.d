@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/maxima/")
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/")
 (autoload 'maxima-mode "maxima" "Maxima mode" t)
 (autoload 'maxima "maxima" "Maxima interaction" t)
 (add-to-list 'auto-mode-alist '("\\.ma[cx]\\'" . maxima-mode))
@@ -17,7 +17,7 @@
 (add-hook 'maxima-mode-hook #'display-line-numbers-mode)
 
 (when (featurep 'undo-tree)
-    (add-hook 'inferior-maxima-mode-hook (lambda () (undo-tree-mode -1))))
+  (add-hook 'inferior-maxima-mode-hook (lambda () (undo-tree-mode -1))))
 
 ;; Imaxima
 (require 'cl)
@@ -26,7 +26,7 @@
 (with-eval-after-load 'imaxima
   (setq imaxima-maxima-program "maxima")
   (setq imaxima-use-maxima-mode-flag t)
-  (setq imaxima-pt-size 12))
+  (setq imaxima-fnt-size "LARGE"))
 
 (provide 'init-maxima)
 ;;; init-maxima.el ends here
