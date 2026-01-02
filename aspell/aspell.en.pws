@@ -1,4 +1,4 @@
-personal_ws-1.1 en 299 
+personal_ws-1.1 en 301 
 AMS
 Abelian
 BCFW
@@ -12,6 +12,7 @@ CDF
 CEPC
 CERN
 CKM
+CMB
 CMS
 CP
 CSV
@@ -267,6 +268,7 @@ sparticles
 spinor
 spinors
 spurion
+sqrt
 squark
 squarks
 stau
