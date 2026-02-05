@@ -50,8 +50,9 @@
 ;; (setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 
 ;; recent files
-(add-to-list 'recentf-exclude "\\.ps$")
-(add-to-list 'recentf-exclude "^/\\.cache/")
+(with-eval-after-load 'recentf
+  '((add-to-list 'recentf-exclude "\\.ps$")
+    (add-to-list 'recentf-exclude "^/\\.cache/")))
 
 (provide 'init-misc)
 ;;; init-misc.el ends here
