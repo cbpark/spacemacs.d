@@ -1,5 +1,6 @@
-personal_ws-1.1 en 301 
+personal_ws-1.1 en 326 
 AMS
+APCTP
 Abelian
 BCFW
 BFGS
@@ -11,6 +12,7 @@ Brookhaven
 CDF
 CEPC
 CERN
+CHSH
 CKM
 CMB
 CMS
@@ -44,6 +46,7 @@ Hermitian
 Higgs
 Higgses
 Higgsstrahlung
+Horodecki
 ICT
 ILC
 Inrt
@@ -59,6 +62,7 @@ LSP
 Leptoquark
 MAOS
 MHV
+MSIT
 MSSM
 Majorana
 Makefile
@@ -69,7 +73,11 @@ NMSSM
 NRF
 Nelder
 PDFs
+PLC
+PLCs
 PQ
+Peres
+Pohang
 Pseudorapidity
 Pythia
 QCD
@@ -92,6 +100,7 @@ VEVs
 Weyl
 Yukawa
 adjoint
+analyticity
 anisotropy
 annihilations
 ansatz
@@ -107,6 +116,9 @@ arXiv
 axino
 axion
 axionic
+azimuthal
+backscattered
+backscattering
 baryogenesis
 bilinear
 bino
@@ -132,6 +144,7 @@ counterterms
 covariance
 covariant
 decompositions
+decorrelation
 detections
 diagonalization
 diagonalize
@@ -158,6 +171,7 @@ electroweakinos
 eq
 eqs
 executables
+extractable
 fermion
 fermion's
 fermionic
@@ -192,12 +206,14 @@ irrespectively
 isometry
 isospin
 isothermal
+kaons
 kinematically
 lagrangian
 leptonic
 leptoquarks
 lightlike
 logarithmically
+luminosities
 massless
 masslessness
 metastable
@@ -213,14 +229,17 @@ namespace
 neutralino
 neutralinos
 nonlinearly
+nonlocality
 nonnegative
 nonperturbative
 nonvanishing
 normalizations
 notational
+observability
 observables
 optimality
 orthochronous
+orthonormal
 parameterizes
 parametrization
 parametrized
@@ -231,12 +250,16 @@ perturbative
 perturbativity
 phenomenologically
 pion
+pions
 polarizations
 priori
 pseudoscalar
 pseudoscalars
 quadratically
 quartic
+qubit
+qubits
+qutrit
 radiative
 radiatively
 rapidities
@@ -296,7 +319,9 @@ trilinear
 twistor
 underconstrained
 unitarity
+unnormalized
 unphysical
 unpolarized
+unshaded
 vacua
 wavefunction
