@@ -54,5 +54,8 @@
   '((add-to-list 'recentf-exclude "\\.ps$")
     (add-to-list 'recentf-exclude "^/\\.cache/")))
 
+(with-eval-after-load 'gnuplot
+  (add-hook 'gnuplot-mode-hook 'turn-on-font-lock))
+
 (provide 'init-misc)
 ;;; init-misc.el ends here
