@@ -1,4 +1,4 @@
-personal_ws-1.1 en 337 
+personal_ws-1.1 en 345 
 AMS
 APCTP
 Abelian
@@ -97,11 +97,13 @@ Sturm
 Subsec
 TeV
 Tevatron
+Transversality
 VEV
 VEVs
 Weyl
 Yukawa
 adjoint
+adjoints
 analyticity
 anisotropy
 annihilations
@@ -127,6 +129,7 @@ baryogenesis
 bilinear
 bilinears
 bino
+bispinor
 bispinors
 boson
 bosonic
@@ -137,8 +140,10 @@ chargino
 charginos
 charmonium
 chiral
+chiralities
 chirality
 coannihilations
+coherences
 collider
 colliders
 collimated
@@ -149,6 +154,7 @@ compactified
 counterterms
 covariance
 covariant
+covariantly
 decompositions
 decorrelation
 detections
@@ -259,6 +265,7 @@ phenomenologically
 pion
 pions
 polarizations
+prefactor
 priori
 pseudoscalar
 pseudoscalars
@@ -284,6 +291,7 @@ rescalings
 saxion
 sbottom
 selectron
+semidefinite
 semileptonic
 sfermion
 sfermions
