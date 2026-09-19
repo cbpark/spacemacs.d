@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-maxima.el --- Maxima mode
 ;;; Commentary:
 ;;; Code:

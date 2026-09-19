@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-editor.el --- Utils for editing
 ;;; Commentary:
 ;;; Code:

@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-cc-mode.el --- CC mode
 ;;; Commentary:
 ;;; Code:

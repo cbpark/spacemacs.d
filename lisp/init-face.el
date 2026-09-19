@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-face.el -- Custom faces
 ;;; Commentary:
 ;;; Code:

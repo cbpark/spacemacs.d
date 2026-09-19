@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-mu4e.el --- Customizing mu4e mail client
 ;;; Commentary:
 ;;; Code:

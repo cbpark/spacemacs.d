@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 ;;; init-auctex.el --- Customizing AUCTeX mode
 ;;; Commentary:
 ;;; Code:
