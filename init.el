@@ -235,9 +235,7 @@ It should only modify the values of Spacemacs settings."
    ;; package can be defined with `:package', or a theme can be defined with
    ;; `:location' to download the theme package, refer the themes section in
    ;; DOCUMENTATION.org for the full theme specifications.
-   dotspacemacs-themes '(doom-solarized-light
-                         doom-solarized-dark
-                         doom-nord
+   dotspacemacs-themes '(doom-nord
                          spacemacs-dark
                          spacemacs-light)
 
